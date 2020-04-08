@@ -1,0 +1,6 @@
+<h1>Register a Camper</h1>
+<%= form_for @camper do |f| %>
+    Name: <%= f.text_field :name %><br/>
+    Age: <%= f.number_field :age %><br/>
+    <%= f.submit %>
+<% end %>

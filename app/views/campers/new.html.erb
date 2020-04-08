@@ -1,0 +1,18 @@
+<h1>Sign Up a New Camper!</h1>
+<% if @errors %>
+    <% @errors.each do |error| %>
+        <p style='color: red'>
+            <%= error %>
+        </p>
+    <% end%>
+</h2>
+<% end%>
+<%= form_with model: Camper.new do |c| %>
+    <%= c.label :name %>
+    <%= c.text_field :name %>
+    <%= c.label :age %>
+    <%= c.text_field :age %>
+    <%= c.submit %>
+<% end %><br><br>
+
+<%= link_to 'Back to Index', campers_path %>

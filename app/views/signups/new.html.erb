@@ -1,0 +1,10 @@
+<h1>Create a New Signup!</h1>
+<%= form_with model: Signup.new  do |s| %>
+    <%= s.label :camper %>
+    <%= s.collection_select :camper_id, Camper.all, :id, :name %>
+    <%= s.label :activity %>
+    <%= s.collection_select :activity_id, Activity.all, :id, :name %>
+    <%= s.label :time%>
+    <%= s.number_field :time, in: 0..23 %>
+    <%= s.submit%>
+<% end %>

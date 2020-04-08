@@ -1,0 +1,17 @@
+<h1>New Signup</h1>
+
+<%= form_for @signup do |f| %>
+    <%= f.label :time %>
+    <%= f.text_field :time %>
+    <br />
+
+    <%= f.label "Select Camper" %>
+    <%= f.select :camper_id, options_from_collection_for_select(Camper.all, "id", "name") %>
+    <br />
+
+    <%= f.label "Select Activity" %>
+    <%= f.select :activity_id, options_from_collection_for_select(Activity.all, "id", "name") %>
+    <br />
+
+    <%= f.submit %>
+<% end %>

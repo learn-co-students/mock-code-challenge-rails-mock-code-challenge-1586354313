@@ -1,0 +1,9 @@
+<h1>All Signups</h1>
+
+<ul>
+  <% @signups.each do |signup| %>
+    <li><%= link_to "#{signup.camper.name} – #{signup.activity.name} at #{signup.time}", signup_path(signup) %></li>
+  <% end %>
+</ul>
+
+<h3><%= link_to "Create a New Signup", "/signups/new" %></h3>

@@ -1,12 +1,6 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-
-
+Camper.destroy_all
+Activity.destroy_all
+Signup.destroy_all
 
 camper1 = Camper.create(name: 'Caitlin',age: 8)
 camper2 = Camper.create(name: 'Lizzie', age: 9)
@@ -28,15 +22,15 @@ activity7 = Activity.create(name: 'Canoeing', difficulty: 3)
 activity8 = Activity.create(name: 'Windsurfing', difficulty: 5)
 
 
-# Signup.create(camper: camper1, activity: activity2, time: 11)
-# Signup.create(camper: camper1, activity: activity1, time: 12)
-# Signup.create(camper: camper1, activity: activity4, time: 15)
-# Signup.create(camper: camper2, activity: activity2, time: 11)
-# Signup.create(camper: camper2, activity: activity1, time: 12)
-# Signup.create(camper: camper3, activity: activity4, time: 16)
-# Signup.create(camper: camper3, activity: activity4, time: 16)
-# Signup.create(camper: camper3, activity: activity4, time: 16)
-# Signup.create(camper: camper3, activity: activity4, time: 16)
-# Signup.create(camper: camper4, activity: activity8, time: 16)
-# Signup.create(camper: camper5, activity: activity7, time: 11)
-# Signup.create(camper: camper3, activity: activity4, time: 12)
+Signup.create(camper: camper1, activity: activity2, time: 11)
+Signup.create(camper: camper1, activity: activity1, time: 12)
+Signup.create(camper: camper1, activity: activity4, time: 15)
+Signup.create(camper: camper2, activity: activity2, time: 11)
+Signup.create(camper: camper2, activity: activity1, time: 12)
+Signup.create(camper: camper3, activity: activity4, time: 16)
+Signup.create(camper: camper3, activity: activity4, time: 16)
+Signup.create(camper: camper3, activity: activity4, time: 16)
+Signup.create(camper: camper3, activity: activity4, time: 16)
+Signup.create(camper: camper4, activity: activity8, time: 16)
+Signup.create(camper: camper5, activity: activity7, time: 11)
+Signup.create(camper: camper3, activity: activity4, time: 12)

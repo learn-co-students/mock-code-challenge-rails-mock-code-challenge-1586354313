@@ -26,4 +26,14 @@ ActiveRecord::Schema.define(version: 2019_01_02_175158) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "signups", force: :cascade do |t|
+    t.integer "time"
+    t.integer "activity_id"
+    t.integer "camper_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["activity_id"], name: "index_signups_on_activity_id"
+    t.index ["camper_id"], name: "index_signups_on_camper_id"
+  end
+
 end

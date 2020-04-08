@@ -4,7 +4,7 @@ class CreateCampers < ActiveRecord::Migration[5.2]
       t.string :name
       t.integer :age
 
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end

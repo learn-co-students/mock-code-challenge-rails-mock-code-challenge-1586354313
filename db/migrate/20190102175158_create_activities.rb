@@ -4,7 +4,7 @@ class CreateActivities < ActiveRecord::Migration[5.2]
       t.string :name
       t.integer :difficulty
 
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end

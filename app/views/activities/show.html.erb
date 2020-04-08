@@ -1,0 +1,8 @@
+<h1>Activity: <%= @activity.name %></h1>
+<p>Difficulty Level: <%= @activity.difficulty %></p>
+<ul>
+    <% @activity.campers.each do |c| %>
+        <li><%= link_to c.name, camper_path(c) %></li>
+    <% end %>
+</ul>
+<%= link_to 'Back to Index', activities_path %>

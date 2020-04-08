@@ -4,8 +4,8 @@
 
 <ul>
   <% @camper.activities.each do |activity| %>
-    <li><%= activity.name %></li>
+    <li><%= activity.name %></li><br>
   <% end %>
 </ul>
 
-
+<%= link_to "See all Campers", campers_path %>
